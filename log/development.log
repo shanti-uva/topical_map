@@ -2,3 +2,11 @@
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
+  [4;36;1mSQL (99.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (20.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (92.2ms)[0m   [0;1mSHOW TABLES[0m
+OpenIdAuthentication.store is nil. Using in-memory store.
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+OpenIdAuthentication.store is nil. Using in-memory store.
