@@ -8695,3 +8695,153 @@ Rendering rescues/layout (not_found)
   [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
   [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+OpenIdAuthentication.store is nil. Using in-memory store.
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Users/heisermazariegos/Workspaces/3.4/rails/shanti_kmaps/vendor/rails/actionpack/lib/action_controller/middleware_stack.rb:72)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2010-12-13 09:33:18) [GET]
+  Parameters: {"category_id"=>"947"}
+  [4;35;1mCategory Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 947) [0m
+  [4;35;1mCategory Load (5.8ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.parent_id = 947 AND (`categories`.`published` = 1)) ORDER BY title, title[0m
+Rendering template within layouts/multi_column
+Rendering categories/index
+  [4;36;1mCategory Load (4.6ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.parent_id = 1179 AND (`categories`.`published` = 1)) ORDER BY title, title[0m
+Rendered categories/_selectable_node (1.3ms)
+Rendered categories/_contracted (16.3ms)
+  [4;35;1mCategory Load (4.7ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.parent_id = 948 AND (`categories`.`published` = 1)) ORDER BY title, title[0m
+Rendered categories/_selectable_node (0.8ms)
+Rendered categories/_contracted (9.0ms)
+  [4;36;1mCategory Load (5.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.parent_id = 949 AND (`categories`.`published` = 1)) ORDER BY title, title[0m
+Rendered categories/_selectable_node (0.8ms)
+Rendered categories/_contracted (10.4ms)
+  [4;35;1mCategory Load (4.4ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.parent_id = 970 AND (`categories`.`published` = 1)) ORDER BY title, title[0m
+Rendered categories/_selectable_node (0.8ms)
+Rendered categories/_contracted (8.5ms)
+  [4;36;1mCategory Load (4.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.parent_id = 975 AND (`categories`.`published` = 1)) ORDER BY title, title[0m
+Rendered categories/_selectable_node (0.8ms)
+Rendered categories/_contracted (8.5ms)
+  [4;35;1mCategory Load (4.5ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.parent_id = 979 AND (`categories`.`published` = 1)) ORDER BY title, title[0m
+Rendered categories/_selectable_node (0.8ms)
+Rendered categories/_contracted (8.6ms)
+  [4;36;1mCategory Load (4.9ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.parent_id = 1000 AND (`categories`.`published` = 1)) ORDER BY title, title[0m
+Rendered categories/_selectable_node (0.9ms)
+Rendered categories/_contracted (10.0ms)
+Rendered categories/_index (78.0ms)
+Rendered categories/_persistent_links (3.8ms)
+  [4;35;1mTranslatedTitle Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `translated_titles`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `translated_titles` WHERE (`translated_titles`.category_id = 947) [0m
+  [4;35;1mcategories_curators Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `categories_curators`[0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM `people` INNER JOIN `categories_curators` ON `people`.id = `categories_curators`.curator_id WHERE (`categories_curators`.category_id = 947 ) [0m
+  [4;35;1mSource Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `sources`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `sources` WHERE (`sources`.resource_id = 947 AND `sources`.resource_type = 'Category') [0m
+  [4;35;1mDescription Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `descriptions` WHERE (`descriptions`.category_id = 947) [0m
+  [4;35;1mDescription Load (1.5ms)[0m   [0mSELECT * FROM `descriptions` WHERE (`descriptions`.category_id = 947) ORDER BY is_main DESC[0m
+  [4;36;1mComplexScripts::Language Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mComplexScripts::Language Load (0.2ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`id` = 1) [0m
+  [4;36;1mauthors_descriptions Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `authors_descriptions`[0m
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM `people` INNER JOIN `authors_descriptions` ON `people`.id = `authors_descriptions`.author_id WHERE (`authors_descriptions`.description_id = 271 ) [0m
+  [4;36;1mPerson Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mComplexScripts::Language Load (0.3ms)[0m   [0mSELECT * FROM `languages` WHERE (`languages`.`locale` = '--- :en\n') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `sources` WHERE (`sources`.resource_id = 271 AND `sources`.resource_type = 'Description') [0m
+Rendered descriptions/_expanded (36.5ms)
+Rendered descriptions/_index (135.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `descriptions` WHERE (`descriptions`.category_id = 947) [0m
+Cache miss: categories/947-20080312131403/feature_count ({})
+Cache miss: FeatureCategoryCount-http://places.thlib.org/categories//-count-all-paramscategory_id947 ({})
+Cache write (will save 569.33ms): FeatureCategoryCount-http://places.thlib.org/categories//-count-all-paramscategory_id947
+Cache write (will save 600.88ms): categories/947-20080312131403/feature_count
+Cache miss: categories/947-20080312131403/media_count ({})
+Cache miss: MediaCategoryCount-http://mms.thlib.org/categories//-count-all-paramscategory_id947 ({})
+Cache write (will save 524.29ms): MediaCategoryCount-http://mms.thlib.org/categories//-count-all-paramscategory_id947
+Cache write (will save 549.93ms): categories/947-20080312131403/media_count
+Cache hit: categories/947-20080312131403/media_count ({})
+Cache hit: categories/947-20080312131403/media_count ({})
+Rendered categories/_info (1333.6ms)
+Cache hit: categories/947-20080312131403/media_count ({})
+Cache hit: categories/947-20080312131403/feature_count ({})
+Rendered categories/_main_show (1360.8ms)
+Rendered layouts/_main_nav (0.9ms)
+Rendered layouts/_secondary_nav (0.8ms)
+Rendered sessions/_language_options (1.9ms)
+Rendered layouts/_footer (0.7ms)
+Rendered main/_main (179.9ms)
+Completed in 1722ms (View: 1610, DB: 62) | 200 OK [http://localhost/categories/947/children]
+OpenIdAuthentication.store is nil. Using in-memory store.
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Users/heisermazariegos/Workspaces/3.4/rails/shanti_kmaps/vendor/rails/actionpack/lib/action_controller/middleware_stack.rb:72)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-13 09:33:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/language_support.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+OpenIdAuthentication.store is nil. Using in-memory store.
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Users/heisermazariegos/Workspaces/3.4/rails/shanti_kmaps/vendor/rails/actionpack/lib/action_controller/middleware_stack.rb:72)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-13 09:33:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/tmb_implicit.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+OpenIdAuthentication.store is nil. Using in-memory store.
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Users/heisermazariegos/Workspaces/3.4/rails/shanti_kmaps/vendor/rails/actionpack/lib/action_controller/middleware_stack.rb:72)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-13 09:33:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/thickbox.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+OpenIdAuthentication.store is nil. Using in-memory store.
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Users/heisermazariegos/Workspaces/3.4/rails/shanti_kmaps/vendor/rails/actionpack/lib/action_controller/middleware_stack.rb:72)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-13 09:33:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/category_selector.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+OpenIdAuthentication.store is nil. Using in-memory store.
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Users/heisermazariegos/Workspaces/3.4/rails/shanti_kmaps/vendor/rails/actionpack/lib/action_controller/middleware_stack.rb:72)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-13 09:33:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/tab-first-time.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+OpenIdAuthentication.store is nil. Using in-memory store.
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Users/heisermazariegos/Workspaces/3.4/rails/shanti_kmaps/vendor/rails/actionpack/lib/action_controller/middleware_stack.rb:72)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-13 09:33:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/btn-minus-lg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
