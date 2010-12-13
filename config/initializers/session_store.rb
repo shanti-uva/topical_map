@@ -6,7 +6,7 @@
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
   :key         => '_shanti_kmaps_session',
-  :secret      => '37fdbdfe69fad02774890ef03548e797693f63fa617efaafa79d41afeec318b749a52aec03772fd785617454cbead75d5f575df6f51fa527c0784aebcc9638c0'
+  :secret      => 'af03f737d4ab2dc6040e2cba93e8080336deb9692823e545a7b84a4478704390cf21f4b43050ca6e49ae247e092de0b5e61c67b988409fa37d7e29df0b68731b'
 }
 
 # Use the database for sessions instead of the cookie-based default,

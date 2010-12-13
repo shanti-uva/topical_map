@@ -28,6 +28,7 @@
 #masthead-wrapper{ background:url(../images/bg_masthead_tile.png) repeat-x left top;}
 #masthead-utility {float:right; display:inline; width:331px; min-height:21px; height:21px;} /* contains the search and login tabs */
 #masthead{ clear:both; min-height:79px; height:79px; width:920px; background:url(../images/banner-shanti.png) no-repeat 10px top; }
+.kmaps-app{ background:url(../images/banner-shanti-kmaps.png) no-repeat 10px top !important}
 #masthead-utility p{ font-size:.58em; margin:0; padding:0;} /* advanced search text link */
 #masthead-utility p a, #masthead-utility p a:visited{ color:#c0c0c0; margin:0; padding:0; position:relative;left:225px;top:2px; height:12px;}
 #masthead-utility p a:hover{ color:#c0c0c0;}
@@ -257,7 +258,7 @@ a#cat4{ display:block; width:30px; height:24px; float:right; background-image:ur
 /* --- Global Navigation ----------------
 ----------------------------------------- */
 #nav-wrapper{ background:url(../images/bg_nav_wrapper.png) repeat-x left bottom;  border-top:2px solid #ccc;  border-bottom:none}
-#nav ul, #sub-nav ul{ list-style:none;  margin-top:3px;  margin-left:12px; font-family:"Trebuchet MS","Lucida Grande",Helvetica,Arial,sans-serif}
+#nav ul, #sub-nav ul{ list-style:none;  /*margin-top:3px;*/  margin-left:12px; font-family:"Trebuchet MS","Lucida Grande",Helvetica,Arial,sans-serif}
 #nav ul li, #sub-nav ul li{ float:left; font-size:.75em; font-weight:bold}
 #nav ul li a, #nav ul li a:visited, #sub-nav ul li a, #sub-nav ul li a:visited{ float:left; color:#645c4c; display:block;  text-decoration:none;  padding:4px 9px 12px;  margin:1px 4px 0 1px;  border-bottom:none;  height:20px}
 #nav ul li.first a, #sub-nav ul li.first a{ color:#333}

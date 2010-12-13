@@ -26,3 +26,6 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
+
+SHANTI_APP = false
+SHANTI_KMAPS_APP = true
