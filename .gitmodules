@@ -25,9 +25,6 @@
 [submodule "vendor/plugins/complex_scripts"]
 	path = vendor/plugins/complex_scripts
 	url = git://github.com/thl/complex_scripts.git
-[submodule "vendor/plugins/annotate_models"]
-	path = vendor/plugins/annotate_models
-	url = git://github.com/ctran/annotate_models.git
 [submodule "vendor/plugins/globalize2"]
 	path = vendor/plugins/globalize2
 	url = git://github.com/joshmh/globalize2.git
