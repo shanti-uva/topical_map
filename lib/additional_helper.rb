@@ -1,30 +1,8 @@
-module ApplicationHelper
+module AdditionalHelper
   def stylesheet_files
-    ['base', 'language_support', 'authenticated_system','tmb', 'tmb_implicit'] + super
+    ['base', 'language_support', 'authenticated_system','global', 'style', 'thickbox', 'tmb_implicit']
   end
-  
-  def javascript_files
-    [:defaults]
-  end
-  
-  def stylesheets
-    return stylesheet_link_tag(*stylesheet_files)
-  end
-  
-  def javascripts
-    return javascript_include_tag(*javascript_files)
-  end
-  
-  def join_with_and(list)
-    size = list.size
-    case size
-    when 0 then nil
-    when 1 then list.first
-    when 2 then list.join(' and ')
-    when 3 then [list[0..size-2].join(', '), list[size-1]].join(', and ')
-    end
-  end
-  
+    
   def main_navigation_items()
     return @main_navigation_items if @main_navigation_items
     # basic menu options
@@ -61,10 +39,7 @@ module ApplicationHelper
   
   
   def login_status_links()
-    return   "<div id=\"login-status\">" +
-       "#{login_status}#{'&nbsp;'*3}" +
-       language_option_links +
-       "</div>\n"
+    return "<div id=\"login-status\">#{login_status}#{'&nbsp;'*3}#{language_option_links}</div>\n".html_safe
   end
   
   # this method relies on the authenticated_system plugin
