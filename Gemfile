@@ -1,17 +1,29 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.12'
+gem 'rails', '3.1.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-gem 'mysql2', '~> 0.2.17'
+gem 'mysql2'
+gem 'json'
+
+group :assets do
+  gem 'sass-rails', :git => 'https://github.com/rails/sass-rails.git', :tag=>'3-1-stable'
+  gem 'coffee-rails', '~> 3.1.1'
+
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer'
+
+  gem 'uglifier', '>= 1.0.3'
+end
+
 gem 'hpricot', '>= 0.8.6'
 gem 'rack-openid', :require => 'rack/openid'
-gem 'jquery-rails', '0.2.7'
-gem 'tiny_mce'
+gem 'jquery-rails' #, '0.2.7' # compatible with jquery 1.4.4
+gem 'tinymce-rails'
 gem 'memcache-client'
 gem 'open_id_authentication'
-gem 'acts_as_tree', '0.2.0'
+gem 'acts_as_tree', '0.2.0' # compatible with ruby 1.8.7
 gem 'dynamic_form'
 
 # Use unicorn as the web server

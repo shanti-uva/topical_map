@@ -1,8 +1,4 @@
-module AdditionalHelper
-  def stylesheet_files
-    ['base', 'language_support', 'authenticated_system','global', 'style', 'thickbox', 'tmb_implicit']
-  end
-    
+module AdditionalHelper    
   def main_navigation_items()
     return @main_navigation_items if @main_navigation_items
     # basic menu options
@@ -66,7 +62,7 @@ module AdditionalHelper
     str += "noneditable_leave_contenteditable : 'true'," + "\n"
     str += "plugins : 'contextmenu,paste,media,fullscreen,template,noneditable, table, spellchecker'," + "\n"
     str += "template_external_list_url : '/templates/templates.js'," + "\n"
-    str += "content_css : '/stylesheets/customtinymce.css'," + "\n"
+    str += "content_css : '#{asset_path('customtinymce.css')}'," + "\n"
     str += "theme : 'advanced'," + "\n"
     str += "theme_advanced_blockformats : 'p,h1,h2,h3,h4,h5,h6'," + "\n"
     str += "theme_advanced_buttons1 : ' fullscreen,separator,bold,italic,underline,strikethrough,separator,undo,redo,separator,link,unlink,template,formatselect, code'," + "\n"
@@ -85,6 +81,6 @@ module AdditionalHelper
     str += "});" + "\n"
     str += "//]]>" + "\n"
     str += "</script> "
-    return str 
+    return str.html_safe
   end
 end
