@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.8'
+gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -8,8 +8,8 @@ gem 'mysql2'
 gem 'json'
 
 group :assets do
-  gem 'sass-rails', :git => 'https://github.com/rails/sass-rails.git', :tag=>'3-1-stable'
-  gem 'coffee-rails', '~> 3.1.1'
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer'
@@ -26,7 +26,13 @@ gem 'open_id_authentication'
 gem 'acts_as_tree', '0.2.0' # compatible with ruby 1.8.7
 gem 'dynamic_form'
 
-# Use unicorn as the web server
+# To use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
+
+# To use Jbuilder templates for JSON
+# gem 'jbuilder'
+
+# Use unicorn as the app server
 # gem 'unicorn'
 
 # Deploy with Capistrano
@@ -37,17 +43,3 @@ group :development do
   gem 'ruby-debug'
   gem 'mongrel'
 end
-# gem 'ruby-debug19', :require => 'ruby-debug'
-
-# Bundle the extra gems:
-# gem 'bj'
-# gem 'nokogiri'
-# gem 'sqlite3-ruby', :require => 'sqlite3'
-# gem 'aws-s3', :require => 'aws/s3'
-
-# Bundle gems for the local environment. Make sure to
-# put test-only gems in this group so their generators
-# and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
