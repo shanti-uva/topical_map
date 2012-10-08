@@ -1,3 +1,72 @@
+GIT
+  remote: https://github.com/Satish/restful-authentication.git
+  revision: a2f669944c86f2bec46bb248360e556a983140d4
+  branch: rails3
+  specs:
+    restful-authentication (2.0.0.beta1)
+
+GIT
+  remote: https://github.com/ambethia/passiverecord.git
+  revision: cdf0747243e9bbf067ab6fea8cc6cc8f860112b1
+  specs:
+    passiverecord (0.2)
+
+GIT
+  remote: https://github.com/joshmh/globalize2.git
+  revision: 08137d0c6b1bbdb0c7944843023295bcfab45f27
+  branch: rails-3
+  specs:
+    globalize2 (0.2.0)
+
+GIT
+  remote: https://github.com/shanti-uva/shanti_integration.git
+  revision: f4419da9f921c21ffebce06410e681f52fe96f08
+  tag: v1.3.0
+  specs:
+    shanti_integration (1.3.0)
+
+GIT
+  remote: https://github.com/thl/active_resource_extensions.git
+  revision: 39a6362bf5f873355945bc5cb42d7c8cf0cf7e62
+  tag: v2.0.0
+  specs:
+    active_resource_extensions (2.0.0)
+
+GIT
+  remote: https://github.com/thl/authenticated_system.git
+  revision: e99c20363a4fe229555b7ae7ca6e151a7a7c4615
+  tag: v1.3.0
+  specs:
+    authenticated_system (1.3.0)
+
+GIT
+  remote: https://github.com/thl/complex_scripts.git
+  revision: b1593fc513d8a1ab5766479e77147b9e95494399
+  tag: v1.3.0
+  specs:
+    complex_scripts (1.3.0)
+
+GIT
+  remote: https://github.com/thl/kmaps_engine.git
+  revision: 229b9985ffca2cb3e583d4cbf1fcf72001cf3da1
+  tag: v1.3.0
+  specs:
+    kmaps_engine (1.3.0)
+
+GIT
+  remote: https://github.com/thl/mms_integration.git
+  revision: b6af520f9a07f09a199910e2486111b7b3e99203
+  tag: v1.3.0
+  specs:
+    mms_integration (1.3.0)
+
+GIT
+  remote: https://github.com/thl/places_integration.git
+  revision: 438658cd41e96ae1ef17e2c81c50957643f128e9
+  tag: v1.2.0
+  specs:
+    places_integration (1.2.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -29,6 +98,8 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     acts_as_tree (0.2.0)
+    annotate (2.5.0)
+      rake
     arel (3.0.2)
     builder (3.0.3)
     cgi_multipart_eof_fix (2.5.0)
@@ -133,19 +204,30 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_resource_extensions (= 2.0.0)!
   acts_as_tree (= 0.2.0)
+  annotate
+  authenticated_system (= 1.3.0)!
   coffee-rails (~> 3.2.1)
+  complex_scripts (= 1.3.0)!
   dynamic_form
+  globalize2 (= 0.2.0)!
   hpricot (>= 0.8.6)
   jquery-rails
   json
+  kmaps_engine (= 1.3.0)!
   memcache-client
+  mms_integration (= 1.3.0)!
   mongrel
   mysql2
   open_id_authentication
+  passiverecord (= 0.2)!
+  places_integration (= 1.2.0)!
   rack-openid
   rails (= 3.2.8)
+  restful-authentication (= 2.0.0.beta1)!
   ruby-debug
   sass-rails (~> 3.2.3)
+  shanti_integration (= 1.3.0)!
   tinymce-rails
   uglifier (>= 1.0.3)
