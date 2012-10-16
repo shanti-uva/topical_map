@@ -9,3 +9,4 @@ config/environments/quandu_*.rb
 doc/plugins/*
 public/javascripts/tiny_mce/
 public/assets/
+vendor/bundle/
