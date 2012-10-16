@@ -14,12 +14,10 @@
  *= require style
  *= require thickbox
  *
- * From authenticated system plugin:
- *= require authenticated_system
+ *= require authenticated_system/application
  *
  * From kmaps_engine:
  *= require tmb
  *
- * From complex_scripts:
- *= require language_support
+ *= require complex_scripts/language_support
  */
