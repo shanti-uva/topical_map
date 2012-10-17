@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/thl/authenticated_system.git
-  revision: 10a811acd19f1b34175e5b959180bca0fdf98920
+  revision: edff28414db79a7a5c157209b66167ec19260a84
   branch: master
   specs:
     authenticated_system (2.0.0)
