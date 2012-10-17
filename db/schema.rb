@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121011190717) do
+ActiveRecord::Schema.define(:version => 20121017093100) do
 
   create_table "authors_descriptions", :id => false, :force => true do |t|
     t.integer "author_id",      :null => false
