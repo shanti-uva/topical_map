@@ -36,8 +36,8 @@ GIT
 
 GIT
   remote: https://github.com/thl/authenticated_system.git
-  revision: ac2d3b2649d3a55577b7867a8357462c40876cba
-  tag: v2.0.0
+  revision: c7fa696c9e8d7b91eb8a18dc5938a4208c525563
+  branch: master
   specs:
     authenticated_system (2.0.0)
       rails (~> 3.2.8)
