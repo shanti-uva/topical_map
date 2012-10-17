@@ -43,7 +43,13 @@ module AdditionalHelper
       if !logged_in?
         return "#{link_to 'Non-UVa', authenticated_system_login_path} | #{link_to 'UVa', shibboleth_url(:protocol => 'https')} Login."
       else
-        return "#{current_user.login}. #{link_to 'Logout', authenticated_system_logout_path}."
+        s = "#{current_user.login}"
+        if self.current_user.shibboleth_id.blank?
+          s << " (#{link_to 'Associate to UVa account', shibboleth_url(:protocol => 'https')})."
+        else
+          s << '.'
+        end
+        s << " #{link_to 'Logout', authenticated_system_logout_path}."
       end
   end
   
