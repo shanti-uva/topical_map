@@ -223,7 +223,7 @@ ActiveRecord::Schema.define(:version => 20121017093100) do
     t.string   "login",                                   :null => false
     t.string   "email",                                   :null => false
     t.integer  "person_id"
-    t.string   "crypted_password",          :limit => 40, :null => false
+    t.string   "crypted_password",          :limit => 40
     t.string   "salt",                      :limit => 40
     t.string   "remember_token"
     t.datetime "remember_token_expires_at"
