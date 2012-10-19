@@ -20,10 +20,10 @@ GIT
 
 GIT
   remote: https://github.com/shanti-uva/shanti_integration.git
-  revision: e57f489c2cd01746f92ec41da9423d70d968f924
-  tag: v2.0.0
+  revision: 1d8822d0285d971e03e8b6ae16bdccabd359a92e
+  tag: v2.0.1
   specs:
-    shanti_integration (2.0.0)
+    shanti_integration (2.0.1)
       rails (~> 3.2.8)
 
 GIT
@@ -53,10 +53,10 @@ GIT
 
 GIT
   remote: https://github.com/thl/kmaps_engine.git
-  revision: a6975240aaa08a9199222b6d4bcf04e422f04aae
-  tag: v2.0.0
+  revision: a7eb5dc7e424d11151551f561e0ca5ddc684db20
+  tag: v2.0.1
   specs:
-    kmaps_engine (2.0.0)
+    kmaps_engine (2.0.1)
       rails (~> 3.2.8)
 
 GIT
@@ -226,7 +226,7 @@ DEPENDENCIES
   hpricot (>= 0.8.6)
   jquery-rails
   json
-  kmaps_engine (= 2.0.0)!
+  kmaps_engine (= 2.0.1)!
   memcache-client
   mms_integration (= 2.0.0)!
   mongrel
@@ -239,7 +239,7 @@ DEPENDENCIES
   restful-authentication (= 2.0.0.beta1)!
   ruby-debug
   sass-rails (~> 3.2.3)
-  shanti_integration (= 2.0.0)!
+  shanti_integration (= 2.0.1)!
   therubyracer
   tinymce-rails (= 3.5.6)
   uglifier (>= 1.0.3)
