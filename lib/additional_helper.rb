@@ -41,7 +41,7 @@ module AdditionalHelper
   # this method relies on the authenticated_system plugin
   def login_status
       if !logged_in?
-        return "#{link_to 'Non-UVa', authenticated_system_login_path} | #{link_to 'UVa', shibboleth_url(:protocol => 'https')} Login."
+        return link_to 'Login', authenticated_system_login_path
       else
         s = "#{current_user.login}"
         if self.current_user.shibboleth_id.blank?
