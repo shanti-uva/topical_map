@@ -38,7 +38,7 @@ gem 'complex_scripts',            '2.0.0', :git => 'https://github.com/thl/compl
 gem 'kmaps_engine',               '2.0.1', :git => 'https://github.com/thl/kmaps_engine.git', :tag => 'v2.0.1'                #:path => '../../thl/engines/kmaps_engine'
 gem 'mms_integration',            '2.0.0', :git => 'https://github.com/thl/mms_integration.git', :tag => 'v2.0.0'             #:path => '../../thl/engines/mms_integration'
 gem 'places_integration',         '2.0.0', :git => 'https://github.com/thl/places_integration.git', :tag => 'v2.0.0'          #:path => '../../thl/engines/places_integration'
-gem 'shanti_integration',         '2.0.1', :git => 'https://github.com/shanti-uva/shanti_integration.git', :tag => 'v2.0.1'   #:path => '../engines/shanti_integration'
+gem 'shanti_integration',         '2.0.2', :git => 'https://github.com/shanti-uva/shanti_integration.git', :tag => 'v2.0.2'   #:path => '../engines/shanti_integration'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
