@@ -19,6 +19,14 @@ GIT
     globalize2 (0.2.0)
 
 GIT
+  remote: https://github.com/shanti-uva/mediabase_integration.git
+  revision: 5b0004dd7e4de60c84e863d534fec156338c72cd
+  tag: v0.0.1
+  specs:
+    mediabase_integration (0.0.1)
+      rails (~> 3.2.8)
+
+GIT
   remote: https://github.com/shanti-uva/shanti_integration.git
   revision: 728d8e8df1f62a8ec401c6dfe53d711b2c0f3060
   tag: v2.0.2
@@ -53,10 +61,10 @@ GIT
 
 GIT
   remote: https://github.com/thl/kmaps_engine.git
-  revision: a83381e52ed04d5a69c535e8997e7d4430d6b3b0
-  tag: v2.0.3
+  revision: c04b6c7f7017dc9f47b983cc02ffb6a96d5f60e4
+  tag: v2.0.4
   specs:
-    kmaps_engine (2.0.3)
+    kmaps_engine (2.0.4)
       rails (~> 3.2.8)
 
 GIT
@@ -117,7 +125,7 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.3.3)
+    coffee-script-source (1.4.0)
     columnize (0.3.6)
     daemons (1.1.9)
     dynamic_form (1.1.4)
@@ -187,7 +195,7 @@ GEM
       ruby-debug-base (~> 0.10.4.0)
     ruby-debug-base (0.10.4)
       linecache (>= 0.3)
-    ruby-openid (2.2.1)
+    ruby-openid (2.2.2)
     sass (3.2.1)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -226,7 +234,8 @@ DEPENDENCIES
   hpricot (>= 0.8.6)
   jquery-rails
   json
-  kmaps_engine (= 2.0.3)!
+  kmaps_engine (= 2.0.4)!
+  mediabase_integration (= 0.0.1)!
   memcache-client
   mms_integration (= 2.0.0)!
   mongrel
