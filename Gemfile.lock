@@ -61,10 +61,10 @@ GIT
 
 GIT
   remote: https://github.com/thl/kmaps_engine.git
-  revision: c04b6c7f7017dc9f47b983cc02ffb6a96d5f60e4
-  tag: v2.0.4
+  revision: bc6b3f7be8a66ca5e74eb909609bcb34e7a7f343
+  tag: v2.0.5
   specs:
-    kmaps_engine (2.0.4)
+    kmaps_engine (2.0.5)
       rails (~> 3.2.8)
 
 GIT
@@ -234,7 +234,7 @@ DEPENDENCIES
   hpricot (>= 0.8.6)
   jquery-rails
   json
-  kmaps_engine (= 2.0.4)!
+  kmaps_engine (= 2.0.5)!
   mediabase_integration (= 0.0.1)!
   memcache-client
   mms_integration (= 2.0.0)!
