@@ -12,12 +12,9 @@
  *= require global
  *= require base
  *= require style
- *= require thickbox
  *
  *= require authenticated_system/application
+ *= require complex_scripts/application
+ *= require kmaps_engine/application
  *
- * From kmaps_engine:
- *= require tmb
- *
- *= require complex_scripts/language_support
  */

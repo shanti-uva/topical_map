@@ -40,17 +40,19 @@ module AdditionalHelper
   
   # this method relies on the authenticated_system plugin
   def login_status
-      if !logged_in?
-        return link_to 'Login', authenticated_system_login_path
+    if !logged_in?
+      return link_to 'Login', authenticated_system_login_path
+    else
+      s = "#{current_user.login}"
+      if self.current_user.shibboleth_id.blank?
+        s << " (#{link_to 'Associate to UVa account', shibboleth_url(:protocol => 'https')}) | "
       else
-        s = "#{current_user.login}"
-        if self.current_user.shibboleth_id.blank?
-          s << " (#{link_to 'Associate to UVa account', shibboleth_url(:protocol => 'https')})."
-        else
-          s << '.'
-        end
-        s << " #{link_to 'Logout', authenticated_system_logout_path}."
+        s << ' | '
       end
+      s << "#{link_to('Logout', authenticated_system_logout_path)} | "
+      s << "#{link_to 'Admin', authenticated_system_root_path} | " if authorized? hash_for_authenticated_system_root_path
+      s
+    end
   end
   
   # this method relies on the complex scripts plugin
