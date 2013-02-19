@@ -1,25 +1,25 @@
 GIT
-  remote: https://github.com/Satish/restful-authentication.git
+  remote: git://github.com/Satish/restful-authentication.git
   revision: a2f669944c86f2bec46bb248360e556a983140d4
   branch: rails3
   specs:
     restful-authentication (2.0.0.beta1)
 
 GIT
-  remote: https://github.com/ambethia/passiverecord.git
+  remote: git://github.com/ambethia/passiverecord.git
   revision: cdf0747243e9bbf067ab6fea8cc6cc8f860112b1
   specs:
     passiverecord (0.2)
 
 GIT
-  remote: https://github.com/joshmh/globalize2.git
+  remote: git://github.com/joshmh/globalize2.git
   revision: 08137d0c6b1bbdb0c7944843023295bcfab45f27
   branch: rails-3
   specs:
     globalize2 (0.2.0)
 
 GIT
-  remote: https://github.com/shanti-uva/mediabase_integration.git
+  remote: git://github.com/shanti-uva/mediabase_integration.git
   revision: 7efaeec4e6154e6fc45a8606cd81d74fd354e5a5
   tag: v0.0.2
   specs:
@@ -27,7 +27,7 @@ GIT
       rails (~> 3.2.8)
 
 GIT
-  remote: https://github.com/shanti-uva/shanti_integration.git
+  remote: git://github.com/shanti-uva/shanti_integration.git
   revision: 315ca11cf304d795662bf7e6cc0b1188a5311383
   tag: v2.0.4
   specs:
@@ -35,7 +35,7 @@ GIT
       rails (~> 3.2.8)
 
 GIT
-  remote: https://github.com/thl/active_resource_extensions.git
+  remote: git://github.com/thl/active_resource_extensions.git
   revision: 27a01a973f3fbf4d43b5e44ccf76d0ba13fd12d3
   tag: v2.0.1
   specs:
@@ -43,7 +43,7 @@ GIT
       rails (~> 3.2.8)
 
 GIT
-  remote: https://github.com/thl/authenticated_system.git
+  remote: git://github.com/thl/authenticated_system.git
   revision: b5fa56151316d468b2ba82f333da229dc52be732
   tag: v2.0.9
   specs:
@@ -51,7 +51,7 @@ GIT
       rails (~> 3.2.8)
 
 GIT
-  remote: https://github.com/thl/complex_scripts.git
+  remote: git://github.com/thl/complex_scripts.git
   revision: 75f33cea7824f0f69c485065413d38a391c259b0
   tag: v2.0.4
   specs:
@@ -60,7 +60,7 @@ GIT
       rails (~> 3.2.8)
 
 GIT
-  remote: https://github.com/thl/kmaps_engine.git
+  remote: git://github.com/thl/kmaps_engine.git
   revision: 89c3eea7d20d3c8b61a4fd9bb128a50486224df3
   tag: v2.1.5
   specs:
@@ -68,7 +68,7 @@ GIT
       rails (~> 3.2.8)
 
 GIT
-  remote: https://github.com/thl/mms_integration.git
+  remote: git://github.com/thl/mms_integration.git
   revision: e10424bb3ad2ed6184cf833c2b29395f6ef3aa6b
   tag: v2.0.2
   specs:
@@ -76,7 +76,7 @@ GIT
       rails (~> 3.2.8)
 
 GIT
-  remote: https://github.com/thl/places_integration.git
+  remote: git://github.com/thl/places_integration.git
   revision: 06a9c4bd6b8a8e725081aca52d93d1f36df18e8a
   tag: v2.0.1
   specs:
