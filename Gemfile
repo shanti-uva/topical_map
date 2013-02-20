@@ -35,8 +35,8 @@ gem 'authenticated_system',       '2.0.9', :git => 'git://github.com/thl/authent
 gem 'complex_scripts',            '2.0.4', :git => 'git://github.com/thl/complex_scripts.git',              :tag => 'v2.0.4' #:path => '../engines/complex_scripts'
 gem 'kmaps_engine',               '2.1.5', :git => 'git://github.com/thl/kmaps_engine.git',                 :tag => 'v2.1.5' #:path => '../engines/kmaps_engine'
 gem 'mediabase_integration',      '0.0.2', :git => 'git://github.com/shanti-uva/mediabase_integration.git', :tag => 'v0.0.2' #:path => '../engines/mediabase_integration'
-gem 'mms_integration',            '2.0.2', :git => 'git://github.com/thl/mms_integration.git',              :tag => 'v2.0.2' #:path => '../engines/mms_integration'
-gem 'places_integration',         '2.0.1', :git => 'git://github.com/thl/places_integration.git',           :tag => 'v2.0.1' #:path => '../engines/places_integration'
+gem 'mms_integration',            '2.0.3', :git => 'git://github.com/thl/mms_integration.git',              :tag => 'v2.0.3' #:path => '../engines/mms_integration'
+gem 'places_integration',         '2.0.2', :git => 'git://github.com/thl/places_integration.git',           :tag => 'v2.0.2' #:path => '../engines/places_integration'
 gem 'shanti_integration',         '2.0.4', :git => 'git://github.com/shanti-uva/shanti_integration.git',    :tag => 'v2.0.4' #:path => '../engines/shanti_integration'
 
 # To use ActiveModel has_secure_password
