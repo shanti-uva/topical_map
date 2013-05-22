@@ -12,7 +12,8 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer'
+  gem 'libv8', '3.3.10.2'
+  gem 'therubyracer', '0.10.2'
   gem 'uglifier', '>= 1.0.3'
 end
 
@@ -30,14 +31,15 @@ gem 'globalize2', '0.2.0', :git => 'git://github.com/joshmh/globalize2.git', :br
 gem 'passiverecord', '0.2', :git => 'git://github.com/ambethia/passiverecord.git'
 gem 'restful-authentication', '2.0.0.beta1', :git => 'git://github.com/Satish/restful-authentication.git', :branch => 'rails3'
 
-gem 'active_resource_extensions', '2.0.1', :git => 'git://github.com/thl/active_resource_extensions.git',   :tag => 'v2.0.1' #:path => '../engines/active_resource_extensions'
-gem 'authenticated_system',       '2.0.9', :git => 'git://github.com/thl/authenticated_system.git',         :tag => 'v2.0.9' #:path => '../engines/authenticated_system'
-gem 'complex_scripts',            '2.0.4', :git => 'git://github.com/thl/complex_scripts.git',              :tag => 'v2.0.4' #:path => '../engines/complex_scripts'
-gem 'kmaps_engine',               '2.1.5', :git => 'git://github.com/thl/kmaps_engine.git',                 :tag => 'v2.1.5' #:path => '../engines/kmaps_engine'
+gem 'active_resource_extensions', '2.0.5', :git => 'git://github.com/thl/active_resource_extensions.git',   :tag => 'v2.0.5' #:path => '../engines/active_resource_extensions'
+gem 'authenticated_system',       '2.1.0', :git => 'git://github.com/thl/authenticated_system.git',         :tag => 'v2.1.0' #:path => '../engines/authenticated_system'
+gem 'complex_scripts',            '2.0.7', :git => 'git://github.com/thl/complex_scripts.git',              :tag => 'v2.0.7' #:path => '../engines/complex_scripts'
+gem 'interface_utils',            '2.0.2', :git => 'git://github.com/thl/interface_utils.git',              :tag => 'v2.0.2' #:path => '../engines/interface_utils'
+gem 'kmaps_engine',               '2.1.8', :git => 'git://github.com/thl/kmaps_engine.git',                 :tag => 'v2.1.8' #:path => '../engines/kmaps_engine'
 gem 'mediabase_integration',      '0.0.2', :git => 'git://github.com/shanti-uva/mediabase_integration.git', :tag => 'v0.0.2' #:path => '../engines/mediabase_integration'
-gem 'mms_integration',            '2.0.3', :git => 'git://github.com/thl/mms_integration.git',              :tag => 'v2.0.3' #:path => '../engines/mms_integration'
-gem 'places_integration',         '2.0.2', :git => 'git://github.com/thl/places_integration.git',           :tag => 'v2.0.2' #:path => '../engines/places_integration'
-gem 'shanti_integration',         '2.0.4', :git => 'git://github.com/shanti-uva/shanti_integration.git',    :tag => 'v2.0.4' #:path => '../engines/shanti_integration'
+gem 'mms_integration',            '2.0.5', :git => 'git://github.com/thl/mms_integration.git',              :tag => 'v2.0.5' #:path => '../engines/mms_integration'
+gem 'places_integration',         '2.0.4', :git => 'git://github.com/thl/places_integration.git',           :tag => 'v2.0.4' #:path => '../engines/places_integration'
+gem 'shanti_integration',         '2.0.8', :git => 'git://github.com/shanti-uva/shanti_integration.git',    :tag => 'v2.0.8' #:path => '../engines/shanti_integration'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

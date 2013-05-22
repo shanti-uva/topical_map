@@ -28,59 +28,67 @@ GIT
 
 GIT
   remote: git://github.com/shanti-uva/shanti_integration.git
-  revision: 315ca11cf304d795662bf7e6cc0b1188a5311383
-  tag: v2.0.4
+  revision: 222df5b75167824d72a4244552d57a9ac4869590
+  tag: v2.0.8
   specs:
-    shanti_integration (2.0.4)
+    shanti_integration (2.0.8)
       rails (~> 3.2.8)
 
 GIT
   remote: git://github.com/thl/active_resource_extensions.git
-  revision: 27a01a973f3fbf4d43b5e44ccf76d0ba13fd12d3
-  tag: v2.0.1
+  revision: a8d01dca2a40dfb32b85758871b5076303d932a4
+  tag: v2.0.5
   specs:
-    active_resource_extensions (2.0.1)
+    active_resource_extensions (2.0.5)
       rails (~> 3.2.8)
 
 GIT
   remote: git://github.com/thl/authenticated_system.git
-  revision: b5fa56151316d468b2ba82f333da229dc52be732
-  tag: v2.0.9
+  revision: 328b373de7339f191b27de2bb87bc6bf2d97fee8
+  tag: v2.1.0
   specs:
-    authenticated_system (2.0.9)
+    authenticated_system (2.1.0)
       rails (~> 3.2.8)
 
 GIT
   remote: git://github.com/thl/complex_scripts.git
-  revision: 75f33cea7824f0f69c485065413d38a391c259b0
-  tag: v2.0.4
+  revision: a531e71fa205aefa88739d1de8f24ace679fc4f1
+  tag: v2.0.7
   specs:
-    complex_scripts (2.0.4)
+    complex_scripts (2.0.7)
       passiverecord (= 0.2)
       rails (~> 3.2.8)
 
 GIT
-  remote: git://github.com/thl/kmaps_engine.git
-  revision: 89c3eea7d20d3c8b61a4fd9bb128a50486224df3
-  tag: v2.1.5
+  remote: git://github.com/thl/interface_utils.git
+  revision: 1880ef35da900202bebf96dee496c1e3391a4c65
+  tag: v2.0.2
   specs:
-    kmaps_engine (2.1.5)
+    interface_utils (2.0.2)
+      rails (~> 3.2.11)
+
+GIT
+  remote: git://github.com/thl/kmaps_engine.git
+  revision: 7215983406bb7f7ffc5511adce49edd45ef0f3e1
+  tag: v2.1.8
+  specs:
+    kmaps_engine (2.1.8)
       rails (~> 3.2.8)
 
 GIT
   remote: git://github.com/thl/mms_integration.git
-  revision: 3210dd03001bc852525226fe2b145ba04e25ba2a
-  tag: v2.0.3
+  revision: 556f4318617b2bd52080a56872ee6f23185e92df
+  tag: v2.0.5
   specs:
-    mms_integration (2.0.3)
+    mms_integration (2.0.5)
       rails (~> 3.2.8)
 
 GIT
   remote: git://github.com/thl/places_integration.git
-  revision: 6db71a1dc56369fc42c11844c1ef1f56c77d65db
-  tag: v2.0.2
+  revision: c9528a5d702741a5f14d3787909b8e9b38fa1cf2
+  tag: v2.0.4
   specs:
-    places_integration (2.0.2)
+    places_integration (2.0.4)
       rails (~> 3.2.8)
 
 GEM
@@ -142,7 +150,7 @@ GEM
       railties (>= 3.1.0, < 5.0)
       thor (~> 0.14)
     json (1.7.6)
-    libv8 (3.3.10.4)
+    libv8 (3.3.10.2)
     linecache (0.46)
       rbx-require-relative (> 0.0.4)
     mail (2.4.4)
@@ -224,32 +232,34 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_resource_extensions (= 2.0.1)!
+  active_resource_extensions (= 2.0.5)!
   acts_as_tree (= 0.2.0)
   annotate
-  authenticated_system (= 2.0.9)!
+  authenticated_system (= 2.1.0)!
   coffee-rails (~> 3.2.1)
-  complex_scripts (= 2.0.4)!
+  complex_scripts (= 2.0.7)!
   dynamic_form
   globalize2 (= 0.2.0)!
   hpricot (>= 0.8.6)
+  interface_utils (= 2.0.2)!
   jquery-rails
   json
-  kmaps_engine (= 2.1.5)!
+  kmaps_engine (= 2.1.8)!
+  libv8 (= 3.3.10.2)
   mediabase_integration (= 0.0.2)!
   memcache-client
-  mms_integration (= 2.0.3)!
+  mms_integration (= 2.0.5)!
   mongrel
   mysql2
   open_id_authentication
   passiverecord (= 0.2)!
-  places_integration (= 2.0.2)!
+  places_integration (= 2.0.4)!
   rack-openid
   rails (= 3.2.11)
   restful-authentication (= 2.0.0.beta1)!
   ruby-debug
   sass-rails (~> 3.2.3)
-  shanti_integration (= 2.0.4)!
-  therubyracer
+  shanti_integration (= 2.0.8)!
+  therubyracer (= 0.10.2)
   tinymce-rails (= 3.5.6)
   uglifier (>= 1.0.3)
