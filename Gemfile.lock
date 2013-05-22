@@ -28,10 +28,10 @@ GIT
 
 GIT
   remote: git://github.com/shanti-uva/shanti_integration.git
-  revision: 222df5b75167824d72a4244552d57a9ac4869590
-  tag: v2.0.8
+  revision: c81cfe5b130ec228dbb8801a46340de59e1041a9
+  tag: v2.0.9
   specs:
-    shanti_integration (2.0.8)
+    shanti_integration (2.0.9)
       rails (~> 3.2.8)
 
 GIT
@@ -259,7 +259,7 @@ DEPENDENCIES
   restful-authentication (= 2.0.0.beta1)!
   ruby-debug
   sass-rails (~> 3.2.3)
-  shanti_integration (= 2.0.8)!
+  shanti_integration (= 2.0.9)!
   therubyracer (= 0.10.2)
   tinymce-rails (= 3.5.6)
   uglifier (>= 1.0.3)
