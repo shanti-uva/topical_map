@@ -15,11 +15,11 @@ module AdditionalHelper
   end
   
   def site_title(opts={:html=>true})
-    opts[:html] ? 'SHANTI UVa Kmaps' : 'SHANTI UVa Kmaps' 
+    opts[:html] ? 'SHANTI UVa Topical Map' : 'SHANTI UVa Topical Map' 
   end
 
   def banner_title(opts={:html=>true})
-    opts[:html] ? 'SHANTI - Kmaps' : 'SHANTI - Kmaps'
+    opts[:html] ? 'SHANTI - Topical Map' : 'SHANTI - Topical Map'
   end
   
   def page_title()
